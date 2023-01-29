@@ -14,10 +14,11 @@ function onFormSubmit(event) {
         mail,
         pwd,
     };
-    console.log(formData);
-    form.reset();
 
     if (mail.length === 0 || pwd.length === 0) {
         alert("All fields must be completed!");
-    }
+    } else {
+        console.log(formData);
+        form.reset();
+    };
 }
